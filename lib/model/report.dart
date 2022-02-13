@@ -55,6 +55,7 @@ class Report {
   }) {
     final Map<String, dynamic> json = <String, dynamic>{
       "error": error.toString(),
+      "stackTrace": stackTrace.toString(),
       "customParameters": customParameters,
       "dateTime": dateTime.toIso8601String(),
       "platformType": describeEnum(platformType),
